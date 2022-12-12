@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+import CaseStudy from '../components/CaseStudy.astro';
+
+
+const allPosts = await Astro.glob('../pages/work/*.md');
+
+const pageTitle = "Work";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+        <p>case studies</p>
+        {allPosts.map((post) => <CaseStudy url={post.url} title={post.frontmatter.title} />)}
+
+        </BaseLayout>
