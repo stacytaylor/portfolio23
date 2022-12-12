@@ -3,7 +3,7 @@ layout: ../../layouts/CaseStudyLayout.astro
 title: 'Docs Information Architecture'
 description: A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
 image:
-    url: 'public/images/DocsIACover.png' 
+    url: '/images/DocsIACover.png' 
     alt: 'Inclusivity'
 ---
 
