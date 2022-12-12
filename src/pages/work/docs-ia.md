@@ -3,7 +3,7 @@ layout: ../../layouts/CaseStudyLayout.astro
 title: 'Docs Information Architecture'
 description: A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
 image:
-    url: 'https://www.stacytaylor.design/images/docsia/longnav.png' 
+    url: 'public/images/DocsIACover.png' 
     alt: 'Inclusivity'
 ---
 
@@ -96,7 +96,7 @@ While the test results were close, I did see a slight preference for the feature
 We made some small tweaks based on some of the feedback from our usability testing and then designed the new sidebar sections, which include Get started, Authentication, Manage Users, Customize, Secure, Deploy and Monitor, and Troubleshoot.
 
 <figure>
-  <img src="https://www.stacytaylor.design/images/docsia/longnav.png" class="img-large" alt="screenshot showing an example of the new sidebar"/>
+  <img src="public/images/DocsIACover.png" class="img-large" alt="screenshot showing an example of the new sidebar"/>
   <figcaption>screenshot showing an example of the new sidebar.</figcaption>
 </figure>
 
