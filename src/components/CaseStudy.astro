@@ -1,5 +1,10 @@
 ---
-const { title, url } = Astro.props;
----
+const { title, url, description, image} = Astro.props;
 
-<li><a href={url}>{title}</a></li>
+
+---
+ 
+
+<div>
+    <a href={url}><img src={image}></a>
+    <a href={url}>{title}</a><p>{description}</p></div>

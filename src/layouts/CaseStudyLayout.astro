@@ -1,7 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
-
 const { frontmatter } = Astro.props;
 --- 
 <BaseLayout>
@@ -11,6 +10,8 @@ const { frontmatter } = Astro.props;
 <div class="description">
   <p>{frontmatter.description}</p>
 </div>
+
+<img src={frontmatter.image}>
 
 <div class="main-content">
   <slot />

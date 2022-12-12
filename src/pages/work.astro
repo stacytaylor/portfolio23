@@ -10,7 +10,6 @@ const pageTitle = "Work";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-        <p>case studies</p>
-        {allPosts.map((post) => <CaseStudy url={post.url} title={post.frontmatter.title} />)}
+        {allPosts.map((post) => <CaseStudy url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image} />)}
 
         </BaseLayout>

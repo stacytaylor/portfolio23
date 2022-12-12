@@ -2,7 +2,9 @@
 layout: ../../layouts/CaseStudyLayout.astro
 title: 'Docs Information Architecture'
 description: A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
-
+image:
+    url: 'https://www.stacytaylor.design/images/docsia/longnav.png' 
+    alt: 'Inclusivity'
 ---
 
 Because identity and access management (IAM) is such a complex topic, our documentation needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
