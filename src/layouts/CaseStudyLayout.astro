@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import localImage from "../images/DocsIACover.png";
 
 const { frontmatter } = Astro.props;
 --- 
@@ -11,6 +12,7 @@ const { frontmatter } = Astro.props;
   <p>{frontmatter.description}</p>
 </div>
 
+<img src={localImage}>
 <img src={frontmatter.image}>
 
 <div class="main-content">
