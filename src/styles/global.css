@@ -160,7 +160,6 @@ html {
 
 
   /* tags */
-  
   .tags {
     display: flex; 
     flex-wrap: wrap; 
@@ -168,10 +167,14 @@ html {
   }
 
   .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
+    margin-left: 0.50em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    
+  }
+
+  .tag a{
+    color: #232323;
+    text-decoration: none;
   }

@@ -3,14 +3,13 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 title: 'Our Language Reflects Our Values'
 pubDate: 2021-03-29
-description: 'Words matter. The words and phrases we use reflect our values and attitudes towards those around us. As language is constantly evolving, words and phrases that were commonplace in the past may strike us as deeply offensive today. It’s important that we reflect on the terms we use and consider how they may be harming others or how and how they might be perceived in the future.'
+description: 'Words matter.'
 author: 'Stacy Taylor'
-image:
-    url: 'https://miro.medium.com/max/1400/1*0gSfjuMGlJP-EsBAvNVCiw.webp' 
-    alt: 'Inclusivity'
+
 tags: ["inclusive design", "inclusive language", "auth0"]
 ---
 
+The words and phrases we use reflect our values and attitudes towards those around us. As language is constantly evolving, words and phrases that were commonplace in the past may strike us as deeply offensive today. It’s important that we reflect on the terms we use and consider how they may be harming others or how and how they might be perceived in the future.
 
 After injustices in our society were so glaringly emphasized in the summer of 2020, several tech companies, including Github, Google, Twitter, and Intercom, began removing terms with racist roots, like “master,” “slave,” “whitelist,” and “blacklist.”
 
@@ -53,3 +52,5 @@ Auth0’s principles, guidelines, replacement terms, and additional resources ar
 
 # N + 1 > N
 At Auth0, we believe that consistent, iterative improvement leads to incredible results. We recognize that addressing our use of biased language is an ongoing process rather than a one-and-done effort. With our guidelines and principles in place, all employees are empowered to address biased language as they find it. We all have an obligation to be intentional with our language and consider how all words we use have the potential to reflect our values and beliefs.
+
+*Originally published on [Medium](https://medium.com/auth0-design/our-language-reflects-our-values-cb27f780801f)*

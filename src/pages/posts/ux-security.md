@@ -3,14 +3,13 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 title: 'Balancing UX and Security at Auth0'
 pubDate: 2020-03-13
-description: 'At Auth0 we provide the tools for application builders to implement authentication and access management so that they can focus on what makes their product unique, rather than on authentication. Our product design team is responsible for both shaping the experience that developers use to implement Auth0 into their product and for informing the design of the authentication experience for our customer’s customers.'
+description: 'At Auth0 we provide the tools for application builders to implement authentication and access management so that they can focus on what makes their product unique, rather than on authentication.'
 author: 'Stacy Taylor'
-image:
-    url: 'https://miro.medium.com/max/1400/1*0gSfjuMGlJP-EsBAvNVCiw.webp' 
-    alt: 'Inclusivity'
-tags: ["ux", "security", "auth0"]
+tags: ["ux design", "security", "auth0"]
 ---
 
+
+Our product design team is responsible for both shaping the experience that developers use to implement Auth0 into their product and for informing the design of the authentication experience for our customer’s customers.'
 
 That’s a big responsibility. Not only do our customers rely on us to provide secure authentication, they also rely on us to create a positive experience for their users. A well designed and frictionless signup experience can make a huge impact on our customers’ conversion rates and on their users’ level of satisfaction with their product.
 
@@ -26,6 +25,7 @@ At Auth0 we’ve developed several ways of predicting legitimate logins to impro
 ## Contextual Multi-factor Authentication
 Most security-savvy users are aware that enabling multi-factor authentication (MFA) or two-factor authentication is one of the best ways to protect your accounts online. In May 2019 Google reported that enabling multi-factor authentication can block up to 100% of automated attacks, 99% of bulk phishing attacks, and 66% of targeted attacks.
 
+ <img src="/images/blog/security/mfa.png" class="img-large" alt="MFA prompt"/>
 
 But that protection comes at a cost to the user experience. Adding a second factor to the authentication process interrupts the user’s flow. Even a simple factor, like a one time password, requires the user to wait for the SMS or email to arrive, change apps, copy a code, and go back to the original app and paste in the code before returning to the original flow. While mobile operating systems are making it easier to enter a one time password with less context switching, it still disrupts the user flow. Authentication apps, such as Authy and Google Authenticator, provide greater levels of security but are even more disruptive to the user flow.
 
@@ -33,6 +33,8 @@ Wouldn’t it be nice if you had the protection of multi-factor authentication w
 
 ## CAPTCHA
 CAPTCHA, or Completely Automated Public Turing test to tell Computers and Humans Apart, requires users to prove that they’re human, usually by entering a word or words in an image or by identifying objects in a series of images, which helps to reduce automated attacks by bots.
+
+ <img src="/images/blog/security/captcha.png" class="img-large" alt="A CAPTCHA prompt"/>
 
 
 CAPTCHA can be an effective tool to stop many automated attacks, but again, this protection comes at a cost to the user experience. Like MFA, CAPTCHA interrupts the user flow and requires users to decipher difficult to read text or identify objects in grainy photos. If you get it wrong you frequently have to begin the entire process all over again. CAPTCHA also suffers from many accessibility issues. Users with visual impairments may not be able to solve the CAPTCHA at all. Sometimes an audio CAPTCHA is presented as an alternative, but this may not be a feasible solution for users with hearing difficulties, who are in a noisy environment, or don’t have a sound enabled on their system.
@@ -59,6 +61,8 @@ Part of designing a good user experience is making sure a user can easily unders
 ## User enumeration
 Have you ever tried to log in to an application only to receive a generic “there was a problem with your username or password” error message? If so, there’s a good chance you cursed the designer who created that error message.
 
+ <img src="/images/blog/security/enumeration.png" class="img-large" alt="Login screen with an error prompt"/>
+
 
 What kind of subpar UX designer would design such a bad experience? Aren’t they familiar with number nine on Jakob Nielsen’s list of Ten Usability Heuristics, which clearly states “Help users recognize, diagnose, and recover from errors?” A more specific error message like “this username does not exist” or “incorrect password” would be better…right? Maybe not.
 
@@ -70,3 +74,5 @@ Using complex and unique passwords help to prevent brute force attacks once a ma
 Securing the world’s identities while providing a positive authentication experience for end users might seem like a daunting task, but it’s not impossible.
 
 Our engineers work hard behind the scenes to determine whether an attempted login or sign up is legitimate so that we can implement CAPTCHA or multi-factor authentication for suspicious logins while keeping the authentication process frictionless and secure for our customers’ users. We give our customers the power to customize their user experience depending on their risk tolerance and the needs of their users. And while sometimes it is necessary to sacrifice the ideal user experience in order to guarantee the security of our customers and their users, it’s a trade-off that we make consciously and with a great deal of consideration and collaboration.
+
+*Originally published on [Medium](https://medium.com/auth0-design/balancing-ux-and-security-at-auth0-320d72e9c7f8)*

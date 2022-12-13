@@ -10,6 +10,7 @@ image:
 Because identity and access management (IAM) is such a complex topic, our documentation needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
 
 ![A starry night sky.](/images/docsia/getStarted.png)
+ <img src="/images/docsia/getStarted.png" class="img-large" alt="Completed Illustrations"/>
 
 ## Discovery
 We’ve gotten a lot of feedback over the years from the developer community that our docs are fantastic and they’re frequently cited as being a competitive differentiator.

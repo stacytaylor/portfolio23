@@ -2,12 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 
+
+
 const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 
 const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+        
         {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} />)}
 
-        </BaseLayout>
+        
+</BaseLayout>
