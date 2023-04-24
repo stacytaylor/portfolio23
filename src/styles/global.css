@@ -3,7 +3,7 @@
 
 
 html {
-    background-color: #fafafa;
+    background-color: #232323;
     font-family: 'Figtree', sans-serif;
   }
   
@@ -14,8 +14,8 @@ html {
     padding: 1rem;
     font-size: 1.25rem;
     font-weight: 400;
-    line-height: 1.7;
-    color: #232323;
+    line-height: 1.9;
+    color: #fafafa;
   }
 
   .title {
@@ -65,6 +65,11 @@ html {
     padding-top: 1rem;
   }
 
+a {
+  color: #06BCFB;
+}
+
+
   /* nav styles */
 
 
@@ -84,7 +89,7 @@ html {
   .nav a{
     padding: 10px;
     text-decoration: none;
-    color: #232323;
+    color: #fafafa;
   }
 
   .nav-home a{
@@ -114,7 +119,7 @@ html {
   .foot a{
     padding: 10px;
     text-decoration: none;
-    color: #232323;
+    color: #fafafa;
   }
 
   .footer-email  a{
@@ -175,6 +180,6 @@ html {
   }
 
   .tag a{
-    color: #232323;
+    color: #06BCFB;
     text-decoration: none;
   }
