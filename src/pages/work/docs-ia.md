@@ -63,7 +63,6 @@ Some users were very task oriented and would group topics in categories such as 
 
  <img src="/images/docsia/taskCardSort.png" class="img-large" alt="screenshot of card sort results sorted by user task"/>
 
-screenshot of card sort results sorted by user task
 Others grouped topics more around features, for example creating groups like authentication and integrations.
 
  <img src="/images/docsia/featureCardSort.png" class="img-large" alt="screenshot of card sort results sorted by feature"/>

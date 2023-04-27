@@ -5,6 +5,12 @@ const allPosts = await Astro.glob('../pages/work/*.md');
 const pageTitle = "Home";
 ---
 <BaseLayout>
-  <h2>My awesome blog subtitle</h2>
-  {allPosts.map((post) => <CaseStudy url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} />)}
+
+  <h1>Stacy Taylor</h1>
+  <h2>Product Designer with a background in developer experience</h2>
+  <a href ="work/docs-ia"><h3>Auth0 Docs Information Architecture</h3><img src="/images/docsia/DocsIACover.png" class="img-large" alt="Docs IA"/>
+    </a>
+    
+    <a href ="work/quickstart-redesign"><h3>Auth0 Quickstart Redesign</h3><img src="/images/quickstarts/QSRedesignCover.png" class="img-large" alt="Docs IA"/>
+            </a>
 </BaseLayout>
