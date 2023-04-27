@@ -2,15 +2,11 @@
 layout: ../../layouts/CaseStudyLayout.astro
 title: 'Docs Information Architecture'
 description: A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
-image:
-    url: '/Users/stacytaylor/astro/portfolio23/src/assets/DocsIACover.png' 
-    alt: 'Inclusivity'
+
 ---
 
 Because identity and access management (IAM) is such a complex topic, our documentation needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
 
-![A starry night sky.](/images/docsia/getStarted.png)
- <img src="/images/docsia/getStarted.png" class="img-large" alt="Completed Illustrations"/>
 
 ## Discovery
 We’ve gotten a lot of feedback over the years from the developer community that our docs are fantastic and they’re frequently cited as being a competitive differentiator.
@@ -33,16 +29,17 @@ One of the first problems we had to deal with was that we didn’t just have an 
 
 Over time, these two architectures diverged, reaching a point where over 50% of our content was orphaned and didn’t show up in the sidebar at all. Some orphans were individual pages that could only be reached by following a series of in-page links and in some cases entire sections were missing from the sidebar.
 
-screenshot showing tenant settings missing from sidebar
-The entire Tenant Settings section was missing from the sidebar navigation.
+ <img src="/images/docsia/missingFromSidebar.png" class="img-large" alt="screenshot showing tenant settings missing from sidebar"/>
+
 Additionally, 25% of our content experienced a mismatch between the breadcrumbs and the sidebar, due to different parent categories and other inconsistencies.
 
-screenshot showing different breadcrumbs and sidebar navigation
-The sidebar navigation and the breadcrumbs do not match up.
+ <img src="/images/docsia/mismatchedNav.png" class="img-large" alt="screenshot showing different breadcrumbs and sidebar navigation"/>
+
 The two separate IAs also had inconsistent hierarchies, with some categories being a top level category in the breadcrumbs while being a second or third level category in the sidebar.
 
-screenshot showing inconsistent hierarchies
-Universal Login is a parent category in the breadcrumbs, but is nested under Login in the sidebar.
+ <img src="/images/docsia/inconsistentHierarchy.png" class="img-large" alt="screenshot showing inconsistent hierarchies"/>
+
+
 All told, I realized that if you landed on any given doc from a search, there was about a 75% chance you wouldn’t be able to orient yourself based on the sidebar and breadcrumb navigation. This made for an undeniably bad user experience. Being able to frame the problem this way was, however, very useful when it came to getting stakeholder buy-in.
 
 Our first order of business was to address the underlying technical issues that led to these mismatches and have a single source of truth for both the breadcrumbs and the sidebar navigation. A team of technical writers worked on cleaning up file structure in Contentful and our engineering team reworked the sidebar so that both the sidebar navigation and the breadcrumbs would be automatically generated from the file structure in Contentful.
@@ -51,25 +48,11 @@ Once the technical side of things was cleaned up, I wanted to focus on how to ma
 
 Our sidebar was quite long, with over 20 top level categories, and the category names could be confusing or meaningless for users who weren’t familiar with Auth0 or identity concepts. The categories were roughly in the order in which a user might want to learn about the product, but that wasn’t really clear from the way they were displayed.
 
-screenshot showing original sidebar
-The original sidebar navigation was too long to fit on a single screen.
-Based on my previous research, as well as looking at other popular docs sites, I believed that our users would be better served if we broke up the sidebar into different sections based on the jobs to be done.
+ <img src="/images/docsia/longnav.png" class="img-large" alt="screenshot showing original sidebar"/>
+
+Based on my previous research, as well as looking at other popular docs sites, I believed that our users would be better served if we broke up the sidebar into different sections based on primary tasks.
 
 ## Research
-### Usability Testing
-In order to validate this idea, I created two prototypes focused on documentation about user management.
-
-The first presented our navigation as it currently existed as a control.
-
-screenshot of control experience
-The second prototype grouped related sections (user management, provisioning users, migrating users, access control, etc) together into a single section focused on the “job” of managing users.
-
-screenshot of proposed grouping
-I performed an unmoderated usability test with fourteen participants who were at least somewhat familiar with identity concepts but had not used Auth0 before. They were asked to find the same information with both prototypes. To reduce bias, half saw the control version first and half saw the new version first.
-
-The results showed that users preferred the “jobs to be done” based approach where similar topics were grouped together, and they also had higher success rates with this version.
-
-Based on these findings, I decided to move forward with the approach of grouping the existing top-level topics into related groups.
 
 ### Card Sorting
 In order to determine how to best group the topics in the sidebar navigation, I performed a series of card sorts. I created cards for each of the top-level items in our existing navigation and had participants perform open card sorts (where they grouped items however they wanted) and closed card sorts (where they grouped items into predetermined categories). Half of our participants were developers familiar with identity concepts who have not used Auth0, and the other half were Auth0 customers.
@@ -78,10 +61,13 @@ The results of the card sorts tended to take one of two approaches.
 
 Some users were very task oriented and would group topics in categories such as “Settings” for anything that gets configured in the dashboard and “Information” for concepts they needed to learn about. They generally divided topics between conceptual information and actionable steps.
 
+ <img src="/images/docsia/taskCardSort.png" class="img-large" alt="screenshot of card sort results sorted by user task"/>
+
 screenshot of card sort results sorted by user task
 Others grouped topics more around features, for example creating groups like authentication and integrations.
 
-screenshot of card sort results sorted by feature
+ <img src="/images/docsia/featureCardSort.png" class="img-large" alt="screenshot of card sort results sorted by feature"/>
+
 ### Wayfinding
 I knew the next step after card sorting would be doing a wayfinding test to validate the new sidebar structure. But since the card sorts seemed to indicate two different mental models, I decided to test both approaches.
 
@@ -99,8 +85,7 @@ While the test results were close, I did see a slight preference for the feature
 We made some small tweaks based on some of the feedback from our usability testing and then designed the new sidebar sections, which include Get started, Authentication, Manage Users, Customize, Secure, Deploy and Monitor, and Troubleshoot.
 
 <figure>
-  <img src="public/images/DocsIACover.png" class="img-large" alt="screenshot showing an example of the new sidebar"/>
-  <figcaption>screenshot showing an example of the new sidebar.</figcaption>
+  <img src="/images/docsia/getStarted.png" class="img-large" alt="screenshot showing an example of the new sidebar"/>
 </figure>
 
 ## Next Steps
