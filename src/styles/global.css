@@ -152,7 +152,9 @@ a {
     max-width: 50rem;
   }
   
-
+.img-cover {
+  width: 100%;
+}
 
   .dark body {
     background-color: #0d0950;
@@ -183,3 +185,22 @@ a {
     color: #06BCFB;
     text-decoration: none;
   }
+
+  .project {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 80px auto;  
+    align-items: center;
+  }
+
+  .project div.project-title{
+    width: 25%;
+  }
+  .project div.project-cover{
+    width: 75%;
+  }
+  .project a{
+    color: #fafafa;
+    text-decoration: none;
+  }
+ 
