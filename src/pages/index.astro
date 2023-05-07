@@ -4,7 +4,7 @@ import CaseStudy from '../components/CaseStudy.astro';
 const allPosts = await Astro.glob('../pages/work/*.md');
 const pageTitle = "Home";
 ---
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
 
   <h1>&#128075; I'm Stacy!</h1>
   <h2>I'm a Product Designer with a background in SaaS products and developer tools.</h2>
