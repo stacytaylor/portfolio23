@@ -8,7 +8,7 @@ author: 'Stacy Taylor'
 tags: ["ux design", "redesign", "auth0", "user research", "information architecture"]
 ---
 
-A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
+A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent [developer documentation](https://www.auth0.com/docs) is an essential part of our strategy.
 
 
 Because identity and access management (IAM) is such a complex topic, our documentation needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
@@ -43,7 +43,7 @@ Second, search is most useful when users have a good idea of where to start and 
 
 Good navigation also helps users form a mental model of where they are and how everything interconnects. Imagine you were suddenly dropped in the middle of a strange city without a map and told to go from point A to point B. If the city is like Manhattan, with a well-planned grid system, you should be able to quickly get a sense of where you are and where you’re going. If the city is like Boston, with winding streets based on old cow paths, you’re going to have a harder time. SEO might be able to drop you in the right spot, but when it comes to figuring out where to go from there, we wanted our docs to be less like Boston and more like Manhattan.
 
-For more on the need for both search and navigation, check out NNG’s excellent article, (Search Is Not Enough)[https://www.nngroup.com/articles/search-not-enough/].
+For more on the need for both search and navigation, check out NNG’s excellent article, [Search Is Not Enough](https://www.nngroup.com/articles/search-not-enough/).
 
 ## Identifying the Problems
 I knew from casually browsing the docs site that there were some definite problems with the information architecture. There were pages that could only be accessed via cross references from other pages, and docs that lived in multiple places on the sidebar navigation, for example. In order to get a deeper understanding of the problems I conducted a content audit of our 1,000+ pages of documentation. As you can imagine it was quite an undertaking.

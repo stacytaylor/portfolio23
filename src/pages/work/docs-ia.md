@@ -5,7 +5,7 @@ description: A strong developer experience has always been a core part of Auth0â
 
 ---
 
-Because identity and access management (IAM) is such a complex topic, our documentation needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
+Because identity and access management (IAM) is such a complex topic, our [developer documentation](https://www.auth0.com/docs) needs to not only teach developers how to implement Auth0, but also how to integrate it within a larger ecosystem as well as teaching developers the basic concepts and best practices of IAM.
 
 
 ## Discovery

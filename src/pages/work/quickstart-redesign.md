@@ -5,7 +5,7 @@ description: 'Auth0’s quickstarts let developers quickly spin up a new applica
 ---
 
 
-We’ve always gotten positive feedback on our quickstart experience, as well as on our developer experience overall. However, our quickstarts hadn’t seen a substantial update in about 5 years, and we wanted to modernize the experience and look for opportunities to make it even better.
+We’ve always gotten positive feedback on our [quickstart experience](https://auth0.com/docs/quickstarts), as well as on our developer experience overall. However, our quickstarts hadn’t seen a substantial update in about 5 years, and we wanted to modernize the experience and look for opportunities to make it even better.
 
 ## Discovery
 In order to get a better understanding of what developers liked about our quickstarts as well as areas for improvement, we kicked off this project by conducting a usability test on our existing quickstarts.

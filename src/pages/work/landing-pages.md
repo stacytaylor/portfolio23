@@ -4,7 +4,7 @@ title: 'Docs Landing Pages'
 description: The restructuring of the Auth0 docs information architecture was designed to make the Auth0 docs easier to navigate for developers who are new to identity and access management (IAM) concepts. As a next step, we wanted to create landing pages to provide a better introduction to identity concepts.
 ---
 
-When we restructured the Auth0 docs information architecture, we split the content of the docs site into seven high level categories:
+When we restructured the [Auth0 docs](https://www.auth0.com/docs) information architecture, we split the content of the docs site into seven high level categories:
 - Get Started 
 - Authenticate
 - Manage Users
