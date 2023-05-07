@@ -9,7 +9,7 @@ tags: ["ux design", "redesign", "auth0", "user research"]
 ---
 
 
-We’ve always gotten positive feedback on our Quickstart experience, as well as on our developer experience overall. However, our Quickstarts hadn’t seen a substantial update in about 5 years, and we wanted to modernize the experience and look for opportunities to make it even better.
+We’ve always gotten positive feedback on our [Quickstart experience](https://auth0.com/docs/quickstarts), as well as on our developer experience overall. However, our Quickstarts hadn’t seen a substantial update in about 5 years, and we wanted to modernize the experience and look for opportunities to make it even better.
 
 ## Discovery
 
