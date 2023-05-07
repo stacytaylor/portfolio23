@@ -55,16 +55,14 @@ Over time, these two architectures diverged, reaching a point where over 50% of 
 
 ![A screenshot of Auth0’s docs, showing that a section is missing from the sidebar navigation](/images/blog/docsia/tenantsettings.png)
 
-The entire section on Tenant Settings is completely missing from the sidebar navigation
 Additionally, 25% of our content experienced a mismatch between the breadcrumbs and the sidebar, due to different parent categories and other inconsistencies.
 
 ![A screenshot of Auth0’s docs, showing that the breadcrumbs and sidebar navigation do not match](/images/blog/docsia/sidebarmismatch.png)
-The sidebar navigation and the breadcrumbs do not match up
+
 The two separate IAs also had inconsistent hierarchies, with some categories being a top level category in the breadcrumbs while being a second or third level category in the sidebar.
 
 ![A screenshot of Auth0’s docs, showing that the breadcrumbs and sidebar navigation do not match](/images/blog/docsia/inconsistent-hierarchy.png)
 
-Universal Login is a parent category in the breadcrumbs, but is nested under Login in the sidebar.
 All told, I realized that if you landed on any given doc from a search, there was about a 75% chance you wouldn’t be able to orient yourself based on the sidebar and breadcrumb navigation. This made for an undeniably bad user experience. Being able to frame the problem this way was, however, very useful when it came to getting stakeholder buy-in.
 
 Our first order of business was to address the underlying technical issues that led to these mismatches and have a single source of truth for both the breadcrumbs and the sidebar navigation. A team of technical writers worked on cleaning up file structure in Contentful and our engineering team reworked the sidebar so that both the sidebar navigation and the breadcrumbs would be automatically generated from the file structure in Contentful.
