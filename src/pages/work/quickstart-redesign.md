@@ -48,8 +48,7 @@ The code samples provided in the quickstart were incomplete snippets and failed 
  <img src="/images/quickstarts/codeSamples.png" class="img-large" alt="screenshot of code samples"/>
 
 Code samples lacked context needed by novice developers.
-### Using a Default Application
-When a user creates an account with Auth0 they automatically get a Default App in the dashboard, which is what is configured in the quickstart by default. However, most users did not want to integrate with the default application, but instead wanted to use a specific application. With the existing experience, they would have to navigate from the quickstart to the dashboard to create a new application, then return to the quickstart and select their new application in order to apply their configurations.
+
 
 ## Redesign Goals
 Based on the findings from our usability testing we established the following goals for the redesign:
@@ -66,8 +65,6 @@ By allowing users to configure their callback, logout, and web origins URLs dire
 ### Provide Pre-Configured Full File Code Samples
 Rather than showing incomplete code snippets, we can provide full file code samples, including the file that the code would be placed in. This will reduce confusion for novice developers.
 
-### Force the Creation of New App
-We can improve setup automation and reduce errors by creating an actual step for developers to create a new app directly from the quickstart.
 
 ## Design
 I began working on designing a new, more interactive version of the quickstarts that addressed these goals.
@@ -76,8 +73,7 @@ This new version of the quickstarts would allow users to enter configuration inf
 
  <img src="/images/quickstarts/v1Step1.png" class="img-large" alt="screenshot showing redesign"/>
 
-### The first iteration of the interactive quickstart experience.
-The new design included complete code samples, including what files code should be included in. Users can check out the code samples, copy code snippets, or download all the files at once to edit in their code editor. The code samples also update so that the relevant file is displayed as the user scrolls through the guide so that the relevant sample is showing for each step.
+Users can check out the code samples, copy code snippets, or download all the files at once to edit in their code editor. The code samples also update so that the relevant file is displayed as the user scrolls through the guide so that the relevant sample is showing for each step.
 
  <img src="/images/quickstarts/v1Step2.png" class="img-large" alt="screenshot showing redesign with code samples"/>
 
@@ -89,12 +85,10 @@ I shared these initial designs with the team and met with my product manager and
 
  <img src="/images/quickstarts/v2Step1.png" class="img-large" alt="screenshot showing redesign with application creation"/>
 
-#### Users can create a new application directly from the quickstart.
 We also decided that since the code samples wouldn’t be relevant until later in the quickstart that we could put all of the application configuration steps on the right side of the new layout and have the content update automatically as the user scrolls through the guide.
 
  <img src="/images/quickstarts/v2Configure.png" class="img-large" alt="screenshot showing redesign with actions in right column"/>
 
-#### All actionable steps are shown in the righthand column.
 By putting all of the instructions in the left panel and all of the actionable steps in the right column it would be much easier for users to identify the steps they need to take.
 
 ## Usability Testing
@@ -112,8 +106,7 @@ I also added a gray background to the “actions” side of the quickstart to pr
 
  <img src="/images/quickstarts/v3SignUp.png" class="img-large" alt="screenshot showing brand illustrations in quickstart"/>
 
-I also added elements from our updated brand evolution.
 ## Handoff and Implementation
 With the design mostly finalized, I worked with our engineering team on implementation. I had weekly syncs with the engineers and product manager to get status updates and work out the remaining details.
 
-The new quickstart design launched as a beta test in late February 2022. As of this writing we are performing moderated and unmoderated usability testing to assess usability and determine what, if any, usability issues should be addressed.
+The new quickstart design launched as a beta test in late February 2022. We then conducted an additional round of unmoderated usability testing once the Quickstarts were live in order to validate the new design. While overall the feedback was quite positive, we did identify two small areas for improvement. The first was that users were still missing the instructions to sigh up or log in to their accounts, despite the large call to action. To address this, I proposed surfacing the interactive fields earlier, but keeping them disabled until a user logged in. The second issue was that some of the placeholder text was confusing, as users assumed the information was already populated. We addressed that by removing the placeholder content and using helper text instead.
