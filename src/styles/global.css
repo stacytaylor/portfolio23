@@ -3,7 +3,7 @@
 
 
 html {
-    background-color: #060A13;
+    background-color: #0A0E16;
     font-family: 'Figtree', sans-serif;
   }
   
@@ -149,6 +149,9 @@ a {
       text-align: center;
   }
   
+  img {
+    max-width: 100%;
+  }
   .img-large {
     max-width: 100%;
   }
