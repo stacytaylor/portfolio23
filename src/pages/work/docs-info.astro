@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const { frontmatter } = Astro.props;
+const pageTitle = "Docs IA";
+--- 
+<BaseLayout pageTitle={pageTitle}>
+  
+    <section class="hero">
+    
+        <h1>Auth0 Docs Information Architecture</h1>
+        <img src="https://stacytaylor.design/images/DocsIACover.png" alt="">
+    </section>
+
+    <section class="overview">
+        <div class="overview-content">
+        <p class="overline-large">Overview</p>
+        <p class="body-large">A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
+        </p>
+    </div>
+    </section>
+
+
+
+    <section class="docs-intro">
+
+        <div class="body-content">
+        <h2>Auth0 Docs: Love ‘em or Hate ‘em</h2>
+        <p>We had gotten a lot of feedback over the years from the developer community that our docs were fantastic and they were frequently cited as being a competitive differentiator.</p>
+        <p>Unfortunately, we also got a lot of feedback that our docs were terrible and difficult to navigate.</p>
+    </div>
+
+   
+    <div class="col-one">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m a noob at Auth0 so <a href="https://twitter.com/raae?ref_src=twsrc%5Etfw">@raae</a> is probably a better source of info. However, as an Auth0 noob it took me about 3mins to get basic sign up / login flows working. <br><br>The docs are really good too + James Quick (Dev Rel) is an absolute gent!</p>&mdash; Paul Scanlon (@PaulieScanlon) <a href="https://twitter.com/PaulieScanlon/status/1423673225872121860?ref_src=twsrc%5Etfw">August 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="col-two">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">honestly I have never tried to use a piece of technology that made me feel more stupid than auth0 (at least recently).<br><br>such confusing docs spread everywhere, it was so bad I was explicitly looking for unofficial docs in google. the ease of MVP setup is super misleading…</p>&mdash; Monica Lent (@monicalent) <a href="https://twitter.com/monicalent/status/1471256209047052293?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    </section>
+
+
+
+
+    <section class="docs-discovery">
+        <div class="body-content">
+            <h2>Discovery Interviews</h2>
+            <p>To determine why some people loved our docs while other people hated them, I began conducting discovery interviews with our customers. </p>
+            <p>In general I learned that: </p>
+            <h3>Developers who liked our docs</h3>
+            <p>Had more pre-existing IAM knowledge
+                Relied more on Google searches to find docs or community forum posts</p>
+            <h3>Developers who hated our docs</h3>
+            <p>Had less IAM knowledge
+                Relied more on our sidebar navigation because they didn’t know the concepts well enough to choose good search terms
+                Ended up jumping back and forth between loads of tabs</p>
+            </div>
+
+                <div class="research">
+                    <p class="overline-small">Methodoloy</p>
+                    <p class="body-small"> Discovery Interviews, conducted via Zoom</p>
+                        <p class="overline-small"> Participants</p>
+                        <p class="body-small">7 software engineers with varying levels of experience with Auth0</p>
+                        <p class="overline-small">Process</p>
+                        <p class="body-small">Participants were interviewed about where they struggled with Auth0 docs, what they liked about Auth0 docs, and what they look for in developer documentation in general.</p>
+                </div>
+    </section>
+
+<section class="content-audit">
+<div class="content-audit-body">
+<div class="body-content">
+    <h2>Making Sense of the Mess</h2>
+    <p>I performed a content audit of all 1000+ pages of docs, putting together a massive spreadsheet highlighting the problems in the IA. (I am precisely the kind of nerd who finds this sort of task highly enjoyable.</p>
+    <p>The biggest issue was that our sidebar navigation was manually generated, but our breadcrumbs were automatically generated based on the file structure of our CMS. Over time the two had diverged, leading to a number of mismatches.</p>
+        <img src="https://stacytaylor.design/images/DocsIACover.png" alt="">
+</div>
+</div>
+
+
+<div class="three-six">
+    <p class="three-six-text">Roughly 25% of content was missing from the sidebar navigation, including some entire sections!</p>
+    <img class="three-six-img" src="https://stacytaylor.design/images/blog/docsia/sidebarmismatch.png" alt="">
+</div>
+
+<div class="three-six">
+    <p class="three-six-text">Roughly 25% of content was missing from the sidebar navigation, including some entire sections!</p>
+    <img class="three-six-img" src="https://stacytaylor.design/images/blog/docsia/sidebarmismatch.png" alt="">
+</div>
+
+<div class="three-six">
+    <p class="three-six-text">Roughly 25% of content was missing from the sidebar navigation, including some entire sections!</p>
+    <img class="three-six-img" src="https://stacytaylor.design/images/blog/docsia/sidebarmismatch.png" alt="">
+</div>
+
+
+</section>
+
+</BaseLayout>
