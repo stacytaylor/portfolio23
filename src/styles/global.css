@@ -37,6 +37,7 @@ html {
     max-width: 100%;
   }
 
+
   /* * * * * * * * 
    Typography
 * * * * * * * */
@@ -141,13 +142,14 @@ color: #6158D2;
    Case Study Layout
 * * * * * * * */
 
-.hero {
-  background-image: url(IA-bg.svg);
+.docs-ia-hero {
+  background-image: url(/images/docsia/IA-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   margin: 0;
 }
+
 .hero-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
