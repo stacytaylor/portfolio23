@@ -1,12 +1,14 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+import Navigation from '../../components/Navigation.astro';
 
 const { frontmatter } = Astro.props;
 const pageTitle = "Docs IA";
 --- 
-<BaseLayout pageTitle={pageTitle}>
+<CaseStudyLayout pageTitle={pageTitle}>
 
     <div class="hero docs-ia-hero">
+        <Navigation />
         <div class="hero-content">
         <h1>Auth0 Docs Information Architecture</h1>
         <img src="https://stacytaylor.design/images/DocsIACover.png" alt="">
@@ -24,7 +26,7 @@ const pageTitle = "Docs IA";
 
     </div>
 
-
+<section class="docs-intro">
     <div class="one-col">
         <h2>Auth0 Docs: Love ‘em or Hate ‘em</h2>
                 <p>We had gotten a lot of feedback over the years from the developer community that our docs were fantastic and they were frequently cited as being a competitive differentiator.</p>
@@ -38,7 +40,8 @@ const pageTitle = "Docs IA";
         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">honestly I have never tried to use a piece of technology that made me feel more stupid than auth0 (at least recently).<br><br>such confusing docs spread everywhere, it was so bad I was explicitly looking for unofficial docs in google. the ease of MVP setup is super misleading…</p>&mdash; Monica Lent (@monicalent) <a href="https://twitter.com/monicalent/status/1471256209047052293?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
-
+</section>
+<section class="stakeholder-buyin">
     <div class="three-col">
         <p>Stakeholder Objection:
             We should focus on SEO instead of IA because 70% of our traffic comes from search.</p>
@@ -51,7 +54,9 @@ const pageTitle = "Docs IA";
 
 
     </div>
+</section>
 
+<section class="docs-content-audit">
 
     <div class="research-section">
 
@@ -83,4 +88,5 @@ const pageTitle = "Docs IA";
     <img src="https://stacytaylor.design/images/blog/docsia/sidebarmismatch.png" alt="">
 
 </div>
-  </BaseLayout>
+</section>
+  </CaseStudyLayout>
