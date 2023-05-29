@@ -1,0 +1,107 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+
+const { frontmatter } = Astro.props;
+const pageTitle = "Docs Landing Pages";
+--- 
+<CaseStudyLayout pageTitle={pageTitle}>
+
+    <div class="hero landing-page-hero">
+        <Navigation />
+        <div class="hero-content">
+            <img src="/images/landingpages/pipeline diagram2.png" alt="a diagram of auth0's architecture">
+        <h1 class="case-study-header">Auth0 Docs Landing Pages</h1>
+        
+    </div>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="overview">
+        <div class="overview-content">
+            <p class="overline-large">Overview</p>
+            <p class="body-large">The restructuring of the Auth0 docs information architecture was designed to make the Auth0 docs easier to navigate for developers who are new to identity and access management (IAM) concepts. As a next step, we wanted to create landing pages to provide a better introduction to identity concepts.
+            </p>
+        </div>
+    </div>
+
+
+<section class="lp-intro">
+    <div class="one-col">
+        <p>When we restructured the <a href="https://auth0.com/docs">Auth0 docs</a> information architecture, we split the content of the docs site into seven high level categories:</p>
+        <ul>
+            <li>Get Started</li>
+            <li>Authenticate</li>
+            <li>Manage Users</li>
+            <li>Customize</li>
+            <li>Secure</li>
+            <li>Deploy and Monitor</li>
+            <li>Troubleshooting</li>
+        </ul>
+        <p>In order to iterate towards our goal of improving the docs experience for users new to identity and access management (IAM) concepts, we wanted to introduce developers to each of these sections, while also helping them get a better high level understanding of the Auth0 product.</p>
+    </div>
+</section>
+
+<section class="lp-design">
+    <div class="one-col">
+    <h2>Design and Content</h2>
+    <p>Our technical writing staff developed new content for each landing page and the homepage and I put together three design proposals to test with users.</p>
+    </div>
+    <div class="multi-col">
+        <p>The first design paired the introductory text with illustrations created by our visual design team.</p>
+        <img class="cs-image"  src="/images/landingpages/illustration.png" alt="screenshot of the first design">
+    </div>
+
+    <div class="multi-col">
+        <p>For the second design, I created a simplified diagram of Auth0’s architecture that mapped to our new sidebar navigation.</p>
+        <img class="cs-image" src="/images/landingpages/simplifiedv1.png" alt="screenshot of the first design">
+    </div>
+
+    <div class="multi-col">
+        <p>The third design used a much more detailed diagram of Auth0’s architecture.</p>
+        <img class="cs-image"  src="/images/landingpages/arch.png" alt="screenshot of the first design">
+    </div>
+
+</section>
+
+<section class="lp-research">
+    <h2>Research</h2>
+    <div class="research-section">
+
+    <div class="research-content">
+    
+    <p>To test the designs, I interviewed developers various levels of experience both with Auth0 and with authentication in general.</p>
+    <p>All of the developers liked the content of the landing pages and believed it provided a good introduction to each section.</p>
+    <p>The version using the illustrations didn’t resonate with any of the developers. They felt the illustrations were too abstract and didn’t contribute to their understanding of the concepts.</p>
+    <p>The software architect liked the more complex architectural diagram, but thought it was too detailed for a landing page and would be better suited to a different part of the docs.</p>
+    <p>The remaining developers all strongly preferred the simplified diagram. They liked that it:</p>
+    <ul>
+        <li>Gave them a high level understanding of the product at a glance</li>
+        <li>Mapped to the docs navigation</li>
+        <li>Helped them to understand what was in each category</li>
+    </ul>
+
+</div>
+<div class="research-sidebar">
+    <p class="overline-small">Methodoloy</p>
+    <p class="body-small"> Discovery Interviews, conducted via Zoom</p>
+        <p class="overline-small"> Participants</p>
+        <p class="body-small">7 software engineers with varying levels of experience with Auth0</p>
+        <p class="overline-small">Process</p>
+        <p class="body-small">Participants were interviewed about where they struggled with Auth0 docs, what they liked about Auth0 docs, and what they look for in developer documentation in general.</p>
+</div>
+</div>
+</section>
+
+<section class="lp-implementation">
+    <div class="one-col">
+        <h2>Implementation</h2>
+        <p>Once the research was concluded, I made some iterations to the design based on feedback from our users, the docs team, and the product design team.</p>        
+        <img class="cs-image"  src="/images/landingpages/final.png" alt="screenshot of the final design">
+        <p>Then I paired with our frontend engineering team to work on the implementation of the diagram, including making it an interactive way to navigate between the different sections of the docs site.    </p>
+    </div>
+</section>
+
+
+  </CaseStudyLayout>
