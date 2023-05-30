@@ -136,11 +136,11 @@ z-index: 99;
   color: var(--text-dark);
 }
 
-.nav-home a{
+.nav-home a {
   font-weight: 500;
 }
 
-.nav-links a:hover, a:focus {
+.nav a:hover, a:focus {
   text-decoration: underline;
 }
 
@@ -151,7 +151,7 @@ z-index: 99;
 
 
 .foot {
-  margin: 0 auto;
+  margin: 2em auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,12 +170,17 @@ z-index: 99;
   color: var(--text-dark);
 }
 
+
 .footer-email  a{
   font-weight: 500;
 }
 
-.footer-social a:hover, a:focus {
+.footer-email a:hover, a:focus {
   text-decoration: underline;
+}
+
+.footer-social a:hover, a:focus {
+  color: var(--link)
 }
 
   /* * * * * * * * 
@@ -288,6 +293,10 @@ section {
   width: 100%;
 }
 
+.multi-col p {
+  align-self: end;
+}
+
 @media screen and (max-width: 1024px) {
 
   .research-section {
@@ -379,8 +388,8 @@ background: linear-gradient(164deg, rgba(226,221,247,1) 0%, rgba(246,244,255,1) 
     /* Image Styles */
 
     .cs-image {
-      filter: drop-shadow(0px 33px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 13.7866px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 7.37098px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 4.13211px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 2.19453px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 0.913195px 2.21381px rgba(0, 0, 0, 0.0196802));
-border-radius: 24px;
+      filter: drop-shadow(0px 0px 4px rgba(106, 114, 122, 0.08)) drop-shadow(0px 1px 2px rgba(106, 114, 122, 0.1));
+      border-radius: 8px;
     }
 
     figure {
