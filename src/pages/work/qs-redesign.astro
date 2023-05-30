@@ -1,0 +1,90 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+
+const { frontmatter } = Astro.props;
+const pageTitle = "Docs IA";
+--- 
+<CaseStudyLayout pageTitle={pageTitle}>
+
+    <div class="hero docs-ia-hero">
+        <Navigation />
+        <div class="hero-content">
+            <img src="https://stacytaylor.design/images/DocsIACover.png" alt="">
+        <h1 class="case-study-header">Auth0 Docs Information Architecture</h1>
+        
+    </div>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="overview">
+        <div class="overview-content">
+            <p class="overline-large">Overview</p>
+            <p class="body-large">A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
+            </p>
+        </div>
+    </div>
+
+
+<section class="docs-intro">
+    <div class="one-col">
+        <h2></h2>
+        <p></p>
+    </div>
+
+
+    <div class="two-col">
+ 
+    </div>
+
+</section>
+<section class="stakeholder-buyin">
+    <div class="three-col">
+        <p>Stakeholder Objection:
+            We should focus on SEO instead of IA because 70% of our traffic comes from search.</p>
+
+            <p>Stakeholder Objection:
+                Overhauling the IA will take too long and we may need to shift priorities partway through the project.</p>
+
+                <p>Stakeholder Objection:
+                    IA is boring and we should focus on something more visual and impactful, like a homepage redesign.</p>
+
+
+    </div>
+</section>
+
+<section class="docs-content-audit">
+
+    <div class="research-section">
+
+        <div class="research-content">
+            <h2>Discovery Interviews</h2>
+            <p>To determine why some people loved our docs while other people hated them, I began conducting discovery interviews with our customers. </p>
+            <p>In general I learned that: </p>
+            <h3>Developers who liked our docs</h3>
+            <p>Had more pre-existing IAM knowledge
+                Relied more on Google searches to find docs or community forum posts</p>
+            <h3>Developers who hated our docs</h3>
+            <p>Had less IAM knowledge
+                Relied more on our sidebar navigation because they didn’t know the concepts well enough to choose good search terms
+                Ended up jumping back and forth between loads of tabs</p>
+            </div>
+
+                <div class="research-sidebar">
+                    <p class="overline-small">Methodoloy</p>
+                    <p class="body-small"> Discovery Interviews, conducted via Zoom</p>
+                        <p class="overline-small"> Participants</p>
+                        <p class="body-small">7 software engineers with varying levels of experience with Auth0</p>
+                        <p class="overline-small">Process</p>
+                        <p class="body-small">Participants were interviewed about where they struggled with Auth0 docs, what they liked about Auth0 docs, and what they look for in developer documentation in general.</p>
+                </div>
+    </div>
+
+<div class="multi-col">
+    <p>Roughly 25% of content was missing from the sidebar navigation, including some entire sections!</p>
+    <img src="https://stacytaylor.design/images/blog/docsia/sidebarmismatch.png" alt="">
+
+</div>
+</section>
+  </CaseStudyLayout>

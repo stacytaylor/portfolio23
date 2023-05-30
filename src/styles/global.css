@@ -111,6 +111,12 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+.quote {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2E9ACD;
+}
+
   /* * * * * * * * 
    Navigation
 * * * * * * * */
@@ -191,7 +197,7 @@ z-index: 99;
   background-image: url(/images/docsia/IA-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0;
 }
 
