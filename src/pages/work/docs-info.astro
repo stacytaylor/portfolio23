@@ -1,0 +1,208 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+
+const { frontmatter } = Astro.props;
+const pageTitle = "Docs IA";
+--- 
+<CaseStudyLayout pageTitle={pageTitle}>
+
+    <div class="hero docs-ia-hero">
+        <Navigation />
+        <div class="hero-content">
+            <img src="/images/docsia/IACover.png" alt="">
+        <h1 class="case-study-header">Auth0 Docs Information Architecture</h1>
+        
+    </div>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="overview">
+        <div class="overview-content">
+            <p class="overline-large">Overview</p>
+            <p class="body-large">A strong developer experience has always been a core part of Auth0’s DNA. Since our founding we have deliberately built a developer-first product and it continues to be a key part of our success to this day. Naturally, maintaining excellent developer documentation is an essential part of our strategy.
+            </p>
+        </div>
+    </div>
+
+
+<section class="docs-intro">
+    <div class="one-col">
+        <h2>Auth0 Docs: Love ‘em or Hate ‘em</h2>
+                <p>We had gotten a lot of feedback over the years from the developer community that our docs were fantastic and they were frequently cited as being a competitive differentiator.</p>
+                <p>Unfortunately, we also got a lot of feedback that our docs were terrible and difficult to navigate.</p>
+
+    </div>
+
+
+    <div class="two-col">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m a noob at Auth0 so <a href="https://twitter.com/raae?ref_src=twsrc%5Etfw">@raae</a> is probably a better source of info. However, as an Auth0 noob it took me about 3mins to get basic sign up / login flows working. <br><br>The docs are really good too + James Quick (Dev Rel) is an absolute gent!</p>&mdash; Paul Scanlon (@PaulieScanlon) <a href="https://twitter.com/PaulieScanlon/status/1423673225872121860?ref_src=twsrc%5Etfw">August 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">honestly I have never tried to use a piece of technology that made me feel more stupid than auth0 (at least recently).<br><br>such confusing docs spread everywhere, it was so bad I was explicitly looking for unofficial docs in google. the ease of MVP setup is super misleading…</p>&mdash; Monica Lent (@monicalent) <a href="https://twitter.com/monicalent/status/1471256209047052293?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</section>
+
+
+<section class="docs-discover">
+    <h2>Discovery Interviews</h2>
+    <div class="research-section">
+
+    <div class="research-content">
+    
+    <p>To determine why some people loved our docs while other people hated them, I began conducting discovery interviews with our customers. </p>
+    <p>I learned that in general:</p>
+    <h3>Developers who liked our docs</h3>
+        <ul>
+            <li>Had more pre-existing Identity and Access management (IAM) knowledge</li>
+            <li>Relied more on Google searches to find docs or community forum posts</li>
+        </ul>
+
+        <h3>Developers who hated our docs</h3>
+        <ul>
+            <li>Had less Identity and Access management (IAM) knowledge</li>
+            <li>Relied more on our sidebar navigation because they didn’t know the concepts well enough to choose good search terms</li>
+            <li>Ended up jumping back and forth between lots of open of tabs</li>
+        </ul>
+
+</div>
+<div class="research-sidebar">
+    <p class="overline-small">Research Methodoloy</p>
+    <p class="body-small">Discovery Interviews, conducted via Zoom</p>
+        <p class="overline-small"> Participants</p>
+        <p class="body-small">7 software engineers with varying levels of experience with Auth0</p>
+        <p class="overline-small">Process</p>
+        <p class="body-small">Participants were interviewed about where they struggled with Auth0 docs, what they liked about Auth0 docs, and what they look for in developer documentation in general</p>
+</div>
+</div>
+</section>
+
+
+<section class="content-audit">
+    <div class="one-col">
+        <h2>Making Sense of the Mess</h2>
+            <p>I performed a content audit of all 1000+ pages of docs, putting together a massive spreadsheet highlighting the problems in the IA. (I am precisely the kind of nerd who finds this sort of task highly enjoyable).</p>
+            <p>The biggest issue was that our sidebar navigation was manually generated, but our breadcrumbs were automatically generated based on the file structure of our CMS. Over time the two had diverged, leading to a number of mismatches.</p>
+            <figure>
+            <img class="cs-image" src="/images/docsia/content-audit.png" alt="two tree diagrams showing the sidebar navigation structure and the breadcrumb navigation structure">
+            <figcaption>A tree diagram of the sidebar navigation (left) vs the breadcrumb navigation (right).</figcaption>
+            </figure>
+    </div>
+
+    <div class="multi-col">
+        <p>Roughly 25% of content was missing from the sidebar navigation, including some entire sections!</p>
+        <img  class="cs-image" src="/images/docsia/missingFromSidebar.png" alt="screenshot of a section missing from the sidebar navigation">
+</div>
+
+<div class="multi-col">
+    <p>The hierarchy of sections didn’t always match between the sidebar and breadcrumbs.</p>
+    <img  class="cs-image" src="/images/docsia/inconsistentHierarchy.png" alt="screenshot of a sections with mismatched hierarchy">
+</div>
+
+<div class="multi-col">
+    <p>Some content was in different sections in the sidebar vs the breadcrumbs.</p>
+    <img class="cs-image"  src="/images/docsia/mismatchedNav.png" alt="screenshot of a section missing with mismatched content">
+</div>
+
+   <p class="quote">75% of docs content had some sort of mismatch between the sidebar and breadcrumb navigation</p>
+
+</section>
+
+
+<section class="stakeholder-buyin">
+
+    <div class="one-col">
+        <h2>Getting Stakeholders On Board</h2>
+        <p>It turns out most people don’t find information architecture quite as exciting as I do. Go figure. I fought for this project because I believed that improving our IA would provide a solid foundation on which to build our docs. </p>
+    </div>
+    <div class="three-col">
+        <div>
+            <p class="overline-small">Stakeholder Objection:</p>
+            <p>We should focus on SEO instead of IA because 70% of our traffic comes from search.</p>
+            <p class="overline-small">My Counter arguments:</p>
+            <ol>
+                <li>We didn’t know whether users were searching because that’s what they prefer or because our navigation was failing them.</li>
+                <li>Our research showed that our target audience was more likely to rely on in-site navigation.</li>
+            </ol>
+        </div>
+
+        <div>
+            <p class="overline-small">Stakeholder Objection:</p>
+            <p>Overhauling the IA will take too long and we may need to shift priorities partway through the project.</p>
+            <p class="overline-small">My solution:</p>
+            <p>I put together a project plan that we could roll out in phases and estimated the workload for technical writers and engineers for each phase.</p>
+        </div>
+
+        <div>
+            <p class="overline-small">Stakeholder Objection:</p>
+            <p>IA is boring and we should focus on something more visual and impactful, like a homepage redesign.</p>
+            <p class="overline-small">My solution:</p>
+            <p>Our visual design team was working on a rebrand. Incorporating branding updates while updating the navigation would make more of a splash.</p>
+        </div>
+    </div>
+
+
+
+</section>
+
+<section class="docs-card-sorting">
+    <h2>Card Sorting and Wayfinding</h2>
+    <div class="research-section">
+
+        <div class="research-content">
+           <p>I conducted open and closed card sorts for topics in our existing navigation menu to get a better understanding of participant’s mental models. </p>
+           <p>Most people fell into one of two groups:</p>
+            <p>Some users grouped topics by task, creating groups based on a user’s journey through setting up and configuring Auth0.</p>
+            <img src="/images/docsia/taskCardSort.png" alt="a screenshot of the card sorting results" class="cs-image">
+            <p>Others grouped topics more by feature, creating groups around authentication users, securing their applications, or configuring different integrations.</p>
+            <img src="/images/docsia/featureCardSort.png" alt="a screenshot of the card sorting results" class="cs-image">
+            </div>
+
+                <div class="research-sidebar">
+                    <p class="overline-small">Research Methodoloy</p>
+                    <p class="body-small">Moderated open and closed card sorting conducted via Zoom</p>
+                        <p class="overline-small"> Participants</p>
+                        <p class="body-small">8 developers with varying levels of experience with Auth0 and 5 developers who were familiar with IAM but had not used Auth0</p>
+                        <p class="overline-small">Process</p>
+                        <p class="body-small">Users were given 40 topics from our top-level navigation and asked to sort them into groups however they liked (open card sort). Next they were given the same topics and asked to put them into pre-selected groups (closed card sort)</p>
+                </div>
+            </div>
+<div class="research-section">
+    <div class="research-content">
+        <p>To validate the results of the card sorting, I followed up with wayfinding tests for both a task-based IA and a feature-based IA.</p>
+        <p>Once again, different people had different mental models about how the topics should be grouped. Overall, however, more people were successful with the feature-based navigation and reported preferring that option.</p>
+    </div>
+
+    <div class="research-sidebar">
+        <p class="overline-small">Research Methodoloy</p>
+        <p class="body-small">Unmoderated tree testing</p>
+            <p class="overline-small"> Participants</p>
+            <p class="body-small">Auth0 customers, non-Auth0 users, and Auth0 employees (to validate internally)</p>
+            <p class="overline-small">Process</p>
+            <p class="body-small"> Participants were shown two different versions of our sidebar navigation (task-based and feature-based) and were given five different topics to find using each version. Half were shown the feature-based version first and half were shown the task-based version first</p>
+    </div>
+
+</div>
+<p class="quote">"I preferred the [Feature-based] experience because the top bar navigation was segmented more and the headlines were much less ambiguous."</p>
+
+</section>
+
+
+
+<section class="docs-ia-design">
+    <div class="one-col">
+    <h2>Design and Implementation</h2>
+    <p>We made some small tweaks based on some of the feedback from our usability testing and then designed the new sidebar sections, which include Get started, Authentication, Manage Users, Customize, Secure, Deploy and Monitor, and Troubleshoot.</p>
+    <p>I paired with our frontend engineering team to iterate on the behavior of the new sidebar, how users would move from one section to another, and the mobile version of the navigation menu.</p>
+    <img src="/images/docsia/getStarted.png" alt="screenshot of the getting started page" class="cs-image">
+</div>
+</section>
+
+<section class="docs-ia-design">
+    <div class="one-col">
+    <h2>Validation and Next Steps</h2>
+        <p>Because there are so many potential paths through our documentation, it is difficult to quantify the precise impact of the information architecture change. However, the qualitative feedback we collected through follow-up interviews and our embedded feedback widget were overwhelmingly positive.</p>
+        <p>The next phase of this project was to create new landing pages for each new navigation category, which you can read about in my <a href="/work/docs-landing-pages">Landing Pages Case Study</a>.</p>
+</div>
+</section>
+
+  </CaseStudyLayout>

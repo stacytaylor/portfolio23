@@ -5,6 +5,7 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 --- 
 <BaseLayout pageTitle={frontmatter.title}>
+  <div class="wrapper">
   <div class="title">
     <h1>{frontmatter.title}</h1>
   </div>
@@ -31,6 +32,7 @@ const { frontmatter } = Astro.props;
   <div class="main-content">
     <slot />
   </div>
+</div>
 </BaseLayout>
 <style>
             

@@ -1,0 +1,235 @@
+---
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+
+const { frontmatter } = Astro.props;
+const pageTitle = "Interactive Quickstarts";
+--- 
+<CaseStudyLayout pageTitle={pageTitle}>
+
+    <div class="hero qs-hero">
+        <Navigation />
+        <div class="hero-content">
+            <img src="/images/quickstarts/qs-cover.png" alt="">
+        <h1 class="case-study-header">Auth0 Interactive Quickstarts</h1>
+        
+    </div>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="overview">
+        <div class="overview-content">
+            <p class="overline-large">Overview</p>
+            <p class="body-large">Auth0’s quickstarts let developers quickly spin up a new application and add login and logout functionality, allowing them to learn the product by diving directly into the coding experience.
+            </p>
+        </div>
+    </div>
+
+
+<section class="qs-intro">
+    <h2>Updating Our Quickstart Experience</h2>
+        <div class="research-section">
+    
+            <div class="research-content">
+                <p>We’d always gotten positive feedback on our quickstart experience, as well as on our developer experience overall. However, our quickstarts hadn’t seen a substantial update in about 5 years, and we wanted to modernize the experience and look for opportunities to make it even better.</p>
+                <p>In order to get a better understanding of what developers liked about our quickstarts as well as areas for improvement, we kicked off this project by conducting a usability test on our existing quickstarts.</p>
+    </div>
+                    <div class="research-sidebar">
+                        <p class="overline-small">Research Methodoloy</p>
+                        <p class="body-small">Moderated Usability Testing, via Zoom</p>
+                            <p class="overline-small"> Participants</p>
+                            <p class="body-small">6 React developers who did not have any prior experience with Auth0</p>
+                            <p class="overline-small">Process</p>
+                            <p class="body-small">Participants were asked to complete our React quickstart.</p>
+                    </div>
+        </div>
+</section>
+
+<section class="qs-problems">
+    <div class="one-col">
+    <h2>Identifying and Addressing Pain Points</h2>
+        <p>After completing the usability testing, we identified the following problems we wanted to solve:</p>
+</div>
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Problem</p>
+        <h3>Incomplete Code Samples</h3>
+
+        <p>The code samples provided in the quickstart were incomplete snippets and failed to call out a specific file name for where to put the code. While more experienced React developers generally figured this step out without assistance, we noticed that it was something novice developers really struggled with.</p>
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/codeSamples.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Solution</p>
+        <h3>Provide Pre-Configured Full File Code Samples</h3>
+
+    <p>Rather than showing incomplete code snippets, we can provide full file code samples, including the file that the code would be placed in. This will reduce confusion for novice developers.</p>
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/v1Step2.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Problem</p>
+        <h3>Too Much Context Switching</h3>
+
+    <p>In order to follow along with the quickstart, users would have to navigate to the Auth0 dashboard to enter their callback, logout, and web origins URLs, then copy the code samples from the quickstart into their code editor. This context switching slowed down the integration process, and created a less focused experience. It was also prone to error, as users frequently forgot to save their URLs in the dashboard.</p>
+
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/contextSwitching.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Solution</p>
+        <h3>Configure URLs from the Quickstart</h3>
+
+    <p>By allowing users to configure their callback, logout, and web origins URLs directly from the quickstart we can reduce context switching and speed up integration time.</p>
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/v1contextswitching.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Problem</p>
+        <h3>Unclear Benefits of Account Creation</h3>
+
+    <p>If users had a free Auth0 account and were logged in, the code samples in the quickstart automatically update to include information tied to their application. </p>
+    <p>Our testing showed that, while the quickstarts recommend creating an account, the information is buried in the introduction and doesn’t do an adequate job of conveying the advantages of doing so.</p>
+</div>
+
+<div class="multi-col-img">
+
+    <img src="/images/quickstarts/accountLogin.png" alt="" class="cs-image">
+    <img src="/images/quickstarts/accountCreation.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Solution</p>
+        <h3>Make “Create Account” or “Login” an Actual Step</h3>
+
+    <p>We can do a better job of encouraging account creation and login by making this an actual step in the process as opposed to a suggestion.</p>
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/v1Step1.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Problem</p>
+        <h3>Sample App Confusion</h3>
+
+    <p>The existing quickstart offered a sample application as an alternative to the integration steps. Users were forced to choose which path to follow from the very beginning, with no clear guidance on the advantages of one approach over the other.</p>
+</div>
+
+<div class="multi-col-img">
+
+
+    <img src="/images/quickstarts/sampleApp.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+<div class="multi-col">
+    <div class="multi-col-copy">
+        <p class="overline-small">Solution</p>
+        <h3>Use the Sample App as a Guide</h3>
+
+    <p>Sample apps could be put to better use by serving as a guide for novice developers as opposed to a different path.</p>
+</div>
+
+<div class="multi-col-img">
+    <img src="/images/quickstarts/v1Step1.png" alt="" class="cs-image">
+</div>
+
+</div>
+
+</section>
+
+<section class="design">
+    <div class="one-col">
+        <h2>Design</h2>
+        <p>I began working on designing a new, more interactive version of the quickstarts that addressed these goals.
+        </p>
+        <p>Users can check out the code samples, copy code snippets, or download all the files at once to edit in their code editor. The code samples also update so that the relevant file is displayed as the user scrolls through the guide so that the relevant sample is showing for each step. </p>
+    <h3>Iterations</h3>
+    <p>I shared these initial designs with the team and met with my product manager and the lead engineer on the project to discuss next steps. After discussing the technical feasibility, we opted to take the automation one step further by adding the ability to create or change an application directly from the quickstart, thus eliminating the need to switch from the quickstart to the dashboard at all.</p>
+    <img src="/images/quickstarts/v2Step1.png" alt="" class="cs-image">
+    <p>We also decided that since the code samples wouldn’t be relevant until later in the quickstart that we could put all of the application configuration steps on the right side of the new layout and have the content update automatically as the user scrolls through the guide.</p>
+    <img src="/images/quickstarts/v2Configure.png" alt="" class="cs-image">
+    </div>
+</section>
+
+
+<section class="qs-usability-testing">
+<h2>Usability Testing</h2>
+    <div class="research-section">
+
+        <div class="research-content">
+            <p>Because this new design was such a significant departure from our previous designs, we wanted to run some usability tests to make sure it was still easy for users to get up and running quickly and to ensure that we weren’t taking the automation too far.            </p>
+            <p>The reactions to the new version of the quickstart were overwhelmingly positive, with participants noting that it was intuitive and easy to use and that having the code samples update as they scrolled through the instructions made following along a “no-brainer.”</p>
+
+            <p class="quote">"It’s so clear and so precise that anyone could just follow it step-by-step....it’s broken down in a way that’s much more intuitive to the user."</p>
+        </div>
+                <div class="research-sidebar">
+                    <p class="overline-small">Research Methodoloy</p>
+                    <p class="body-small">Unmoderated Usability Testing</p>
+                        <p class="overline-small"> Participants</p>
+                        <p class="body-small">14 React developers who did not have any prior experience with Auth0</p>
+                        <p class="overline-small">Process</p>
+                        <p class="body-small">Participants tested prototypes of the existing quickstart and the new interactive quickstart. In order to minimize bias, half of the testers saw the control version first and the other half saw the interactive version first.</p>
+                </div>
+    </div>
+</section>
+
+<section class="design-updates">
+    <div class="one-col">
+        <h2>Design Updates</h2>
+        <p>Once we were confident that we were on the right track with the new interactive quickstart I presented it to the rest of the product design team at a design critique to get some additional feedback. I made some additional iterations on the design based on that feedback. I replaced the sidebar navigation with a dropdown at the top of the page in order to provide more room for the content and keep the layout simpler.
+        </p>
+
+
+    </div>
+    <img src="/images/quickstarts/qs animation.gif" alt="" class="cs-image">
+</section>
+
+<section class="qs-handoff">
+    <div class="one-col">
+        <h2>Handoff and Implementation
+        </h2>
+        <p>With the design mostly finalized, I worked with our engineering team on implementation. I had weekly syncs with the engineers and product manager to get status updates and work out the remaining details. </p>
+        <p>The new quickstart design launched as a beta test in late February 2022. We then conducted an additional round of unmoderated usability testing once the Quickstarts were live in order to validate the new design. While overall the feedback was quite positive, we did identify two small areas for improvement. The first was that users were still missing the instructions to sigh up or log in to their accounts, despite the large call to action. To address this, I proposed surfacing the interactive fields earlier, but keeping them disabled until a user logged in. The second issue was that some of the placeholder text was confusing, as users assumed the information was already populated. We addressed that by removing the placeholder content and using helper text instead. </p>
+    </div>
+</section>
+
+
+  </CaseStudyLayout>
