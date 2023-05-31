@@ -450,4 +450,25 @@ background: linear-gradient(164deg, rgba(226,221,247,1) 0%, rgba(246,244,255,1) 
   }
 
 
- 
+  @media screen and (max-width: 700px) {
+    
+    .case-study-header,  h1 {
+      font-size: 3.5rem;
+    }
+
+    .h2 {
+      font-size: 2rem;
+    }
+
+    .multi-col {
+  
+
+      margin-top: 2em;
+      margin-bottom: 4em;
+    }
+
+    section {
+      margin-bottom: 6em;
+    
+    }
+  }
